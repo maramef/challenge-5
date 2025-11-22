@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="challenge5.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Currency converter</h1>
+        <div class="converter">
+            <label>Amount of convert: </label>
+            <input 
+            type="number" 
+            id="amount" 
+            placeholder="Enter amount" >
+            <div>
+                <div>
+                    <span>From</span>
+                    <select id="fromCurrency">
+                        <option value="DZD">DZD</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                        <option value="JPY">JPY</option>
+                        <option value="CAD">CAD</option>
+                        <option value="AUD">AUD</option>
+                        <option value="CHF">CHF</option>
+                        <option value="CNY">CNY</option>
+                        <option value="INR">INR</option>
+                    </select>
+                </div>
+                <div class="currency-group">
+                    <span>To</span>
+                    <select id="toCurrency">
+                        <option value="DZD">DZD</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                        <option value="JPY">JPY</option>
+                        <option value="CAD">CAD</option>
+                        <option value="AUD">AUD</option>
+                        <option value="CHF">CHF</option>
+                        <option value="CNY">CNY</option>
+                        <option value="INR">INR</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="button">
+                <button class="convert-button" onclick="convertCurrency()">Convert</button>
+                <button class="reset-button" onclick="resetForm()">Reset</button>
+            </div>
+            <div class='result' id="result"></div>
+        </div>
+    </div>
+    <script src="challenge5.js"></script>
+    
+</body>
+</html>
